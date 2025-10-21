@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(61, 61, 61);
+}
+
+#slot-machine-background {
+    display: block;
+    margin: auto;
+    width: 82%;
+}
