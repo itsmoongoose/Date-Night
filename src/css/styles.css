@@ -6,4 +6,13 @@ body {
     display: block;
     margin: auto;
     width: 82%;
+    z-index: 0
+}
+
+#paid-btn {
+    position: absolute;
+    width: 10%;
+    top: 625;
+    left: 645;
+    z-index: 1;
 }
