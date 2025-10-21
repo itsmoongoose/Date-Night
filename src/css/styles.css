@@ -9,7 +9,7 @@ body {
     z-index: 0;
 }
 
-#paid-btn {
+.buttons {
     z-index: 1;
     width: 10%;
     height: 10%;
