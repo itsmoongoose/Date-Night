@@ -13,4 +13,22 @@ body {
     z-index: 1;
     width: 10%;
     height: 10%;
+    border-style: solid;
+    border-width: 5px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-align: center center;
+    color: white;
+}
+
+#paid-btn {
+    background-color: rgb(78, 119, 78);
+}
+
+#random-btn {
+    background-color: rgb(77, 77, 77);
+}
+
+#free-btn {
+    background-color: rgb(78, 119, 78);
 }
