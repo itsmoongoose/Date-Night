@@ -25,10 +25,22 @@ body {
     background-color: rgb(78, 119, 78);
 }
 
+#paid-btn:hover {
+    color: rgb(24, 24, 24);
+}
+
 #random-btn {
     background-color: rgb(77, 77, 77);
 }
 
+#random-btn:hover {
+    color: rgb(24, 24, 24);
+}
+
 #free-btn {
     background-color: rgb(78, 119, 78);
+}
+
+#free-btn:hover {
+    color: rgb(24, 24, 24);
 }
