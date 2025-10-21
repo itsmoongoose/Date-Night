@@ -6,5 +6,11 @@ body {
     display: block;
     margin: auto;
     width: 82%;
-    z-index: 0
+    z-index: 0;
+}
+
+#paid-btn {
+    z-index: 1;
+    width: 10%;
+    height: 10%;
 }
