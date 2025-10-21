@@ -38,7 +38,8 @@ body {
 
 .buttons:hover {
     color: rgb(24, 24, 24);
-    transition: 0.2s;
+    transition-duration: 0.1s;
+    cursor: pointer;
 }
 
 #paid-btn:active {
