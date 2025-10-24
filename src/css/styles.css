@@ -6,17 +6,26 @@ body {
     display: block;
     margin: auto;
     width: 82%;
+    height: auto;
+}
+
+.button-container {
+    position: relative;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
 }
 
 .buttons {
-    width: 10%;
-    height: 10%;
+    position: absolute;
     color: white;
-    font-size: 20px;
-    letter-spacing: 5px;
+    width: 9.5%;
+    height: 10%;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 3px;
     border-style: solid;
     border-width: 5px;
     border-radius: 10px;
@@ -24,14 +33,20 @@ body {
 
 #paid-btn {
     background-color: rgb(78, 119, 78);
+    top: 70%;
+    left: 33.75%;
 }
 
 #random-btn {
     background-color: rgb(77, 77, 77);
+    top: 70%;
+    left: 45.75%;
 }
 
 #free-btn {
     background-color: rgb(78, 119, 78);
+    top: 70%;
+    left: 58%;
 }
 
 .buttons:hover {
