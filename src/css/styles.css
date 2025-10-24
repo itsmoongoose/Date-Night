@@ -10,7 +10,6 @@ body {
 }
 
 .buttons {
-    z-index: 1;
     width: 10%;
     height: 10%;
     color: white;
