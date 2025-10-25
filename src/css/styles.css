@@ -69,3 +69,10 @@ body {
 #free-btn:active {
     background-color: rgb(39, 59, 39);
 }
+
+#assorted-slots {
+    position: absolute;
+    width: 21.5%;
+    top: 40%;
+    left: 39.5%;
+}
