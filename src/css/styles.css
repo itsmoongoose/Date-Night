@@ -35,18 +35,21 @@ body {
     background-color: rgb(78, 119, 78);
     top: 70%;
     left: 33.75%;
+    transform: rotate(1deg);
 }
 
 #random-btn {
     background-color: rgb(77, 77, 77);
-    top: 70%;
+    top: 70.5%;
     left: 45.75%;
+    transform: rotate(1deg);
 }
 
 #free-btn {
     background-color: rgb(78, 119, 78);
-    top: 70%;
-    left: 58%;
+    top: 70.75%;
+    left: 57.5%;
+    transform: rotate(1deg);
 }
 
 .buttons:hover {
