@@ -26,13 +26,27 @@ const dateIdeasList = [
     "watch a show/youtube video",
     "try something new"
 ];
-
-
-
+const paidBtn = document.getElementById('paid-btn');
+const freeBtn = document.getElementById('free-btn');
+const randomBtn = document.getElementById('random-btn');
 
 //Function -- main
 async function main() {
 
+    //Click -- paid button
+    paidBtn.addEventListener('click', function() {
+
+    });
+
+    //Click -- free button
+    freeBtn.addEventListener('click', function() {
+
+    });
+
+    //CLick -- random button
+    randomBtn.addEventListener('click', function() {
+
+    });
 
 
 
