@@ -53,7 +53,4 @@ async function main() {
         let dateIdea = dateIdeasList[randomNum];
         alert("Winner! Our next date will be: " + dateIdea);
     });
-
-
-
 }
