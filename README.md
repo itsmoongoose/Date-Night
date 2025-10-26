@@ -4,7 +4,7 @@ __*Scope and Functionality*__ - This program was made to randomly generate an id
 
 1. __$$$__ - When pressed, the generator will recommend date ideas that *cost money*
 2. __FREE__ - When pressed, the generator will recommend date ideas that *are free*
-3. __?__ - When pressed, the generator will recommend *a mix of date ideas from both categories*
+3. __???__ - When pressed, the generator will recommend *a mix of date ideas from both categories*
 
 To reroll the suggestion, simply press another button.
 
