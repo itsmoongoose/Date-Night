@@ -54,3 +54,4 @@ async function main() {
         alert("Winner! Our next date will be: " + dateIdea);
     });
 }
+main();
