@@ -29,12 +29,29 @@ const dateIdeasList = [
 const paidBtn = document.getElementById('paid-btn');
 const freeBtn = document.getElementById('free-btn');
 const randomBtn = document.getElementById('random-btn');
+const assortedSlotsImg = document.getElementById('assorted-slots');
+const paidSlotsImg = document.getElementById('paid-slots-win');
+const freeSlotsImg = document.getElementById('free-slots-win');
+const randomSlotsImg = document.getElementById('random-slots-win');
 
 //Function -- main
 async function main() {
 
+    //Slots image display
+    paidSlotsImg.style.display = "none";
+    freeSlotsImg.style.display = "none";
+    randomSlotsImg.style.display = "none";
+
     //Click -- paid button
     paidBtn.addEventListener('click', function() {
+
+        //Slots image display
+        paidSlotsImg.style.display = "inline";
+        freeSlotsImg.style.display = "none";
+        randomSlotsImg.style.display = "none";
+        assortedSlotsImg.style.display = "none";
+
+        //Winning date idea
         let randomNum = Math.floor(Math.random() * 11);
         let dateIdea = dateIdeasList[randomNum];
         alert("Winner! " + dateIdea);
@@ -42,6 +59,14 @@ async function main() {
 
     //Click -- free button
     freeBtn.addEventListener('click', function() {
+
+        //Slots image display
+        paidSlotsImg.style.display = "none";
+        freeSlotsImg.style.display = "inline";
+        randomSlotsImg.style.display = "none";
+        assortedSlotsImg.style.display = "none";
+
+        //Winning date idea
         let randomNum = Math.floor(Math.random() * 12) + 11;
         let dateIdea = dateIdeasList[randomNum];
         alert("Winner! " + dateIdea);
@@ -49,6 +74,14 @@ async function main() {
 
     //CLick -- random button
     randomBtn.addEventListener('click', function() {
+
+        //Slots image display
+        paidSlotsImg.style.display = "none";
+        freeSlotsImg.style.display = "none";
+        randomSlotsImg.style.display = "inline";
+        assortedSlotsImg.style.display = "none";
+
+        //Winning date idea
         let randomNum = Math.floor(Math.random() * 23);
         let dateIdea = dateIdeasList[randomNum];
         alert("Winner! " + dateIdea);
