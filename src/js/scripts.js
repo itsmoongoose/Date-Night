@@ -37,21 +37,21 @@ async function main() {
     paidBtn.addEventListener('click', function() {
         let randomNum = Math.floor(Math.random() * 11);
         let dateIdea = dateIdeasList[randomNum];
-        alert("Winner! Our next date will be: " + dateIdea);
+        alert("Winner! " + dateIdea);
     });
 
     //Click -- free button
     freeBtn.addEventListener('click', function() {
         let randomNum = Math.floor(Math.random() * 12) + 11;
         let dateIdea = dateIdeasList[randomNum];
-        alert("Winner! Our next date will be: " + dateIdea);
+        alert("Winner! " + dateIdea);
     });
 
     //CLick -- random button
     randomBtn.addEventListener('click', function() {
         let randomNum = Math.floor(Math.random() * 23);
         let dateIdea = dateIdeasList[randomNum];
-        alert("Winner! Our next date will be: " + dateIdea);
+        alert("Winner! " + dateIdea);
     });
 }
 main();
