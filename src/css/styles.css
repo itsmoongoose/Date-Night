@@ -68,7 +68,7 @@ body {
     background-color: rgb(39, 59, 39);
 }
 
-#assorted-slots {
+.slots-images {
     position: absolute;
     width: 50%;
     top: 40.09%;
