@@ -17,7 +17,7 @@ body {
 .buttons {
     position: absolute;
     color: white;
-    width: 9.5%;
+    width: 22%;
     height: 10%;
     font-size: 16px;
     display: flex;
@@ -32,21 +32,21 @@ body {
 #paid-btn {
     background-color: rgb(78, 119, 78);
     top: 70%;
-    left: 33.75%;
+    left: 11.75%;
     transform: rotate(1deg);
 }
 
 #random-btn {
     background-color: rgb(77, 77, 77);
     top: 70.5%;
-    left: 45.75%;
+    left: 39.25%;
     transform: rotate(1deg);
 }
 
 #free-btn {
     background-color: rgb(78, 119, 78);
     top: 70.75%;
-    left: 57.5%;
+    left: 67.5%;
     transform: rotate(1deg);
 }
 
@@ -70,7 +70,7 @@ body {
 
 #assorted-slots {
     position: absolute;
-    width: 21.5%;
-    top: 40%;
-    left: 39.5%;
+    width: 50%;
+    top: 40.09%;
+    left: 25.5%;
 }
