@@ -1,6 +1,6 @@
-//Declaring variables
-const dateIdeasList = [
-    //Paid ideas - index 0-10
+// Declaring variables
+const dateIdeasArray = [
+    // Paid ideas - index 0-10
     "Sushi Battleship",
     "Going to the Movies & Arcade",
     "Mini Golf",
@@ -12,7 +12,7 @@ const dateIdeasList = [
     "Going to Winners",
     "Challenge 1: Buy things that are the other's favourite colour",
     "Challenge 2: Choose the other's drink, snack, etc.",
-    //Free ideas - index 11-22
+    // Free ideas - index 11-22
     "Listening to Taylor Swift Records",
     "Playing Minecraft",
     "Playing Board Games",
