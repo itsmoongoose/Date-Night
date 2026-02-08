@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #3f3f3d;
+}
+
+body {
+    background-image: url("../img/slot-machine-background.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: var(--background);
+}
