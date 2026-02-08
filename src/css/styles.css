@@ -15,8 +15,20 @@ body {
     background-color: var(--background);
 }
 
-.slots-img {
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#slots-container {
     width: 45%;
     height: auto;
     margin: 425px 280px;
+}
+
+.slots-img {
+    width: 99.5%;
+    height: auto;
+    margin-top: 1px;
 }
