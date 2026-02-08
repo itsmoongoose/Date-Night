@@ -25,4 +25,7 @@ const dateIdeasArray = [
     "Going on a Walk With Maggie",
     "Watching a Show/YouTube Video",
     "Trying Something New"
-]
+];
+const slotsContainer = document.querySelector(".slots-container");
+const slotsRestingImg = document.querySelector("#slots-resting-img");
+const slotsImgClass = document.querySelector(".slots-img");
