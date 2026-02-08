@@ -14,3 +14,9 @@ body {
     background-position-x: center;
     background-color: var(--background);
 }
+
+.slots-img {
+    width: 45%;
+    height: auto;
+    margin: 425px 280px;
+}
