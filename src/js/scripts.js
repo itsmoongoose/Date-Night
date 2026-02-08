@@ -25,33 +25,4 @@ const dateIdeasList = [
     "Going on a Walk With Maggie",
     "Watching a Show/YouTube Video",
     "Trying Something New"
-];
-const paidBtn = document.getElementById('paid-btn');
-const freeBtn = document.getElementById('free-btn');
-const randomBtn = document.getElementById('random-btn');
-
-//Function -- main
-async function main() {
-
-    //Click -- paid button
-    paidBtn.addEventListener('click', function() {
-        let randomNum = Math.floor(Math.random() * 11);
-        let dateIdea = dateIdeasList[randomNum];
-        alert("Winner! Our next date will be: " + dateIdea);
-    });
-
-    //Click -- free button
-    freeBtn.addEventListener('click', function() {
-        let randomNum = Math.floor(Math.random() * 12) + 11;
-        let dateIdea = dateIdeasList[randomNum];
-        alert("Winner! Our next date will be: " + dateIdea);
-    });
-
-    //CLick -- random button
-    randomBtn.addEventListener('click', function() {
-        let randomNum = Math.floor(Math.random() * 23);
-        let dateIdea = dateIdeasList[randomNum];
-        alert("Winner! Our next date will be: " + dateIdea);
-    });
-}
-main();
+]
