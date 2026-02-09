@@ -2,9 +2,9 @@
 ### __Project Description__
 __*Scope and Functionality*__ - This program was made to randomly generate an idea for your next date night! There are several dozen pre-populated ideas that will randomly generate depending on the button you press.
 
-1. __$$$__ - When pressed, the generator will recommend date ideas that *cost money*
-2. __FREE__ - When pressed, the generator will recommend date ideas that *are free*
-3. __???__ - When pressed, the generator will recommend *a mix of date ideas from both categories*
+1. __$$$__ - When pressed, the generator will recommend date ideas that __cost money__
+2. __FREE__ - When pressed, the generator will recommend date ideas that __are free__
+3. __???__ - When pressed, the generator will recommend __a mix of date ideas from both categories__
 
 To reroll the suggestion, simply press another button.
 
@@ -20,5 +20,4 @@ There are no known bugs at this time.
 
 ### __Installation and Setup__
 
-To use this program, click the following link:\
-https://html-preview.github.io/?url=https://github.com/itsmoongoose/Date-Night/blob/main/src/index.html
+To use this program, click this [link](https://itsmoongoose.github.io/Date-Night/);
