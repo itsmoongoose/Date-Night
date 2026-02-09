@@ -26,9 +26,56 @@ const dateIdeasArray = [
     "Watching a Show/YouTube Video",
     "Trying Something New"
 ];
+const mainContainer = document.querySelector("#main-container");
 const slotsContainer = document.querySelector(".slots-container");
 const slotsRestingImg = document.querySelector("#slots-resting-img");
 const slotsImgClass = document.querySelector(".slots-img");
 const btnPaid = document.querySelector("#btn-paid");
 const btnRandom = document.querySelector("#btn-random");
 const btnFree = document.querySelector("#btn-free");
+let overlayDiv = "";
+
+// Function -- creating and adding overlay
+function createOverlay() {
+
+    // Create overlay, image, and text
+    overlayDiv = document.createElement("div");
+    overlayDiv.classList.add("overlay-div");
+    overlayDiv.classList.remove("hidden");
+    const overlayImg = document.createElement("img");
+    overlayImg.classList.add("overlay-img");
+    overlayImg.src = "img/ticket.png";
+
+    // Add created elements to page
+    overlayDiv.appendChild(overlayImg);
+    mainContainer.appendChild(overlayDiv);
+}
+
+// Function -- remove overlay
+function removeOverlay() {
+    overlayDiv.classList.add("hidden");
+}
+
+// Event Listener -- paid button
+btnPaid.addEventListener("click", (event) => {
+    createOverlay();
+    overlayDiv.addEventListener("click", (event) => {
+        removeOverlay();
+    });
+});
+
+// Event Listener -- random button
+btnRandom.addEventListener("click", (event) => {
+    createOverlay();
+    overlayDiv.addEventListener("click", (event) => {
+        removeOverlay();
+    });
+});
+
+// Event Listener -- free button
+btnFree.addEventListener("click", (event) => {
+    createOverlay();
+    overlayDiv.addEventListener("click", (event) => {
+        removeOverlay();
+    });
+});
