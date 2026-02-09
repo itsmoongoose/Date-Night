@@ -20,4 +20,4 @@ There are no known bugs at this time.
 
 ### __Installation and Setup__
 
-To use this program, click this [link](https://itsmoongoose.github.io/Date-Night/);
+To use this program, click this [link](https://itsmoongoose.github.io/Date-Night/).
