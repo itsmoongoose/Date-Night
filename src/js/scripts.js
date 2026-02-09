@@ -2,29 +2,29 @@
 const dateIdeasArray = [
     // Paid ideas - index 0-10
     "Sushi Battleship",
-    "Going to the Movies & Arcade",
+    "Go to the Movies/Arcade",
     "Mini Golf",
-    "Visiting the Zoo",
-    "Going to the Mall",
-    "Painting Pottery",
-    "Making Dollarama Crafts",
-    "Trying Something New",
-    "Going to Winners",
-    "Challenge 1: Buy things that are the other's favourite colour",
-    "Challenge 2: Choose the other's drink, snack, etc.",
+    "Visit the Zoo",
+    "Go to the Mall",
+    "Paint Pottery",
+    "Make Dollarama Crafts",
+    "Try Something New",
+    "Go to Winners",
+    "Challenge: Buy things that are the other's favourite colour",
+    "Challenge: Choose the other's drink, snack, etc.",
     // Free ideas - index 11-22
-    "Listening to Taylor Swift Records",
-    "Playing Minecraft",
-    "Playing Board Games",
-    "Playing Wii Games",
-    "Working Out",
-    "Longboarding",
-    "Making Bracelets",
-    "Doing a Rust Art Class",
-    "Watching Roey Play Video Games",
-    "Going on a Walk With Maggie",
-    "Watching a Show/YouTube Video",
-    "Trying Something New"
+    "Listen to Taylor Swift Records",
+    "Play Minecraft",
+    "Play Board Games",
+    "Play Wii Games",
+    "Work Out",
+    "Longboard",
+    "Make Bracelets",
+    "Do a Rust Art Class",
+    "Watch Roey Play Video Games",
+    "Go on a Walk With Maggie",
+    "Watch a Show/YouTube Video",
+    "Try Something New"
 ];
 const mainContainer = document.querySelector("#main-container");
 const slotsContainer = document.querySelector(".slots-container");
@@ -34,6 +34,8 @@ const btnPaid = document.querySelector("#btn-paid");
 const btnRandom = document.querySelector("#btn-random");
 const btnFree = document.querySelector("#btn-free");
 let overlayDiv = "";
+let dateIdea;
+let typeSelect = "";
 
 // Function -- creating and adding overlay
 function createOverlay() {
@@ -45,9 +47,17 @@ function createOverlay() {
     const overlayImg = document.createElement("img");
     overlayImg.classList.add("overlay-img");
     overlayImg.src = "img/ticket.png";
+    const overlayTextTitle = document.createElement("h1");
+    overlayTextTitle.classList.add("overlay-text-title");
+    overlayTextTitle.textContent = "Winner!";
+    const overlayTextContent = document.createElement("p");
+    overlayTextContent.classList.add("overlay-text-content");
+    overlayTextContent.textContent = dateIdea;
 
     // Add created elements to page
     overlayDiv.appendChild(overlayImg);
+    overlayDiv.appendChild(overlayTextTitle);
+    overlayDiv.appendChild(overlayTextContent);
     mainContainer.appendChild(overlayDiv);
 }
 
@@ -56,8 +66,24 @@ function removeOverlay() {
     overlayDiv.classList.add("hidden");
 }
 
+// Function -- random date generator
+function dateGenerator() {
+    if (typeSelect == "paid") {
+        const randomNum = Math.round(Math.random() * 10);
+        dateIdea = dateIdeasArray[randomNum];
+    } else if (typeSelect == "random") {
+        const randomNum = Math.round(Math.random() * 11) + 11;
+        dateIdea = dateIdeasArray[randomNum];
+    } else if (typeSelect == "free") {
+        const randomNum = Math.round(Math.random() * 23);
+        dateIdea = dateIdeasArray[randomNum];
+    }
+}
+
 // Event Listener -- paid button
 btnPaid.addEventListener("click", (event) => {
+    typeSelect = "paid";
+    dateGenerator();
     createOverlay();
     overlayDiv.addEventListener("click", (event) => {
         removeOverlay();
@@ -66,6 +92,8 @@ btnPaid.addEventListener("click", (event) => {
 
 // Event Listener -- random button
 btnRandom.addEventListener("click", (event) => {
+    typeSelect = "random";
+    dateGenerator();
     createOverlay();
     overlayDiv.addEventListener("click", (event) => {
         removeOverlay();
@@ -74,6 +102,8 @@ btnRandom.addEventListener("click", (event) => {
 
 // Event Listener -- free button
 btnFree.addEventListener("click", (event) => {
+    typeSelect = "free";
+    dateGenerator();
     createOverlay();
     overlayDiv.addEventListener("click", (event) => {
         removeOverlay();
