@@ -87,7 +87,6 @@ function slotChange() {
         const slotsPaidImg = document.createElement("img");
         slotsPaidImg.src = "img/slots-paid.png";
         slotsPaidImg.classList.add("slots-paid-img");
-        console.log(slotsContainer);
         slotsContainer.innerHTML = "";
         slotsContainer.appendChild(slotsPaidImg);
     } else if (typeSelect == "random") {
@@ -106,10 +105,11 @@ function slotChange() {
 }
 
 // Event Listener -- paid button
-btnPaid.addEventListener("click", (event) => {
+btnPaid.addEventListener("click", async (event) => {
     typeSelect = "paid";
     slotChange();
     dateGenerator();
+    await new Promise(resolve => setTimeout(resolve, 500));
     createOverlay();
     overlayDiv.addEventListener("click", (event) => {
         removeOverlay();
@@ -117,10 +117,11 @@ btnPaid.addEventListener("click", (event) => {
 });
 
 // Event Listener -- random button
-btnRandom.addEventListener("click", (event) => {
+btnRandom.addEventListener("click", async (event) => {
     typeSelect = "random";
     slotChange();
     dateGenerator();
+    await new Promise(resolve => setTimeout(resolve, 500));
     createOverlay();
     overlayDiv.addEventListener("click", (event) => {
         removeOverlay();
@@ -128,10 +129,11 @@ btnRandom.addEventListener("click", (event) => {
 });
 
 // Event Listener -- free button
-btnFree.addEventListener("click", (event) => {
+btnFree.addEventListener("click", async (event) => {
     typeSelect = "free";
     slotChange();
     dateGenerator();
+    await new Promise(resolve => setTimeout(resolve, 500));
     createOverlay();
     overlayDiv.addEventListener("click", (event) => {
         removeOverlay();
