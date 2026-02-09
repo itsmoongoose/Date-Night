@@ -60,14 +60,29 @@ main {
     margin-right: 75px;
 }
 
+#btn-paid:hover {
+    background-image: url("../img/btn-hover-paid.png");
+    background-color: transparent;
+}
+
 #btn-random {
     background-image: url("../img/btn-random.png");
     width: 26%;
     margin-right: 70px;
 }
 
+#btn-random:hover {
+    background-image: url("../img/btn-hover-random.png");
+    background-color: transparent;
+}
+
 #btn-free {
     background-image: url("../img/btn-free.png");
     width: 27%;
     margin-top: 4px;
+}
+
+#btn-free:hover {
+    background-image: url("../img/btn-hover-free.png");
+    background-color: transparent;
 }
