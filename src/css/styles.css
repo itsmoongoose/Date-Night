@@ -6,6 +6,7 @@
 
 :root {
     --background: #3f3f3d;
+    --background-btns: #a60c26;
 }
 
 body {
@@ -24,11 +25,49 @@ main {
 #slots-container {
     width: 45%;
     height: auto;
-    margin: 425px 280px;
+    margin-top: 425px;
+    margin-left: 280px;
 }
 
 .slots-img {
     width: 99.5%;
     height: auto;
     margin-top: 1px;
+}
+
+#buttons-container {
+    width: 80%;
+    height: 110px;
+    margin-top: 41px;
+    margin-left: 105px;
+    display: flex;
+    flex-direction: row;
+}
+
+.regular-btns {
+    width: 28%;
+    height: 100%;
+    color: var(--background-btns);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    outline: 2px solid transparent;
+}
+
+#btn-paid {
+    background-image: url("../img/btn-paid.png");
+    margin-left: 1px;
+    margin-right: 75px;
+}
+
+#btn-random {
+    background-image: url("../img/btn-random.png");
+    width: 26%;
+    margin-right: 70px;
+}
+
+#btn-free {
+    background-image: url("../img/btn-free.png");
+    width: 27%;
+    margin-top: 4px;
 }

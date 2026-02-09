@@ -29,3 +29,6 @@ const dateIdeasArray = [
 const slotsContainer = document.querySelector(".slots-container");
 const slotsRestingImg = document.querySelector("#slots-resting-img");
 const slotsImgClass = document.querySelector(".slots-img");
+const btnPaid = document.querySelector("#btn-paid");
+const btnRandom = document.querySelector("#btn-random");
+const btnFree = document.querySelector("#btn-free");
