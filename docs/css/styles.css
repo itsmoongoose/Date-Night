@@ -115,10 +115,6 @@ main {
     cursor: pointer;
 }
 
-.hidden {
-    display: none;
-}
-
 .overlay-img {
     width: 80%;
     height: auto;
@@ -144,4 +140,38 @@ main {
     width: 350px;
     height: 150px;
     font-size: 39px;
+}
+
+/* Tablet Screen Width */
+@media screen and (min-width: 728px) {
+
+    #slots-container {
+        width: 43%;
+        margin-left: 305px;
+    }
+
+    #buttons-container {
+        width: 75%;
+        height: 115px;
+        margin-left: 127px;
+    }
+
+    #btn-paid {
+        width: 31%;
+        margin-right: 65px;
+    }
+
+    #btn-random {
+        width: 28%;
+    }
+
+    #btn-free {
+        width: 27%;
+        margin-top: 2px;
+        margin-left: 6px;
+    }
+
+    .slots-paid-img, .slots-free-img {
+        margin-top: 3px;
+    }
 }
