@@ -29,10 +29,28 @@ main {
     margin-left: 280px;
 }
 
-.slots-img {
+.slots-resting-img {
     width: 99.5%;
     height: auto;
     margin-top: 1px;
+}
+
+.slots-paid-img {
+    width: 99.5%;
+    height: auto;
+    margin-top: 4px;
+}
+
+.slots-random-img {
+    width: 99.5%;
+    height: auto;
+    margin-top: 3px;
+}
+
+.slots-free-img {
+    width: 99.5%;
+    height: auto;
+    margin-top: 6px;
 }
 
 #buttons-container {

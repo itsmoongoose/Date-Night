@@ -27,9 +27,8 @@ const dateIdeasArray = [
     "Try Something New"
 ];
 const mainContainer = document.querySelector("#main-container");
-const slotsContainer = document.querySelector(".slots-container");
+const slotsContainer = document.querySelector("#slots-container");
 const slotsRestingImg = document.querySelector("#slots-resting-img");
-const slotsImgClass = document.querySelector(".slots-img");
 const btnPaid = document.querySelector("#btn-paid");
 const btnRandom = document.querySelector("#btn-random");
 const btnFree = document.querySelector("#btn-free");
@@ -43,7 +42,6 @@ function createOverlay() {
     // Create overlay, image, and text
     overlayDiv = document.createElement("div");
     overlayDiv.classList.add("overlay-div");
-    overlayDiv.classList.remove("hidden");
     const overlayImg = document.createElement("img");
     overlayImg.classList.add("overlay-img");
     overlayImg.src = "img/ticket.png";
@@ -83,9 +81,34 @@ function dateGenerator() {
     }
 }
 
+// Function -- slot machine images
+function slotChange() {
+    if (typeSelect == "paid") {
+        const slotsPaidImg = document.createElement("img");
+        slotsPaidImg.src = "img/slots-paid.png";
+        slotsPaidImg.classList.add("slots-paid-img");
+        console.log(slotsContainer);
+        slotsContainer.innerHTML = "";
+        slotsContainer.appendChild(slotsPaidImg);
+    } else if (typeSelect == "random") {
+        const slotsRandomImg = document.createElement("img");
+        slotsRandomImg.src = "img/slots-random.png";
+        slotsRandomImg.classList.add("slots-random-img");
+        slotsContainer.innerHTML = "";
+        slotsContainer.appendChild(slotsRandomImg);
+    } else if (typeSelect == "free") {
+        const slotsFreeImg = document.createElement("img");
+        slotsFreeImg.src = "img/slots-free.png";
+        slotsFreeImg.classList.add("slots-free-img");
+        slotsContainer.innerHTML = "";
+        slotsContainer.appendChild(slotsFreeImg);
+    }
+}
+
 // Event Listener -- paid button
 btnPaid.addEventListener("click", (event) => {
     typeSelect = "paid";
+    slotChange();
     dateGenerator();
     createOverlay();
     overlayDiv.addEventListener("click", (event) => {
@@ -96,6 +119,7 @@ btnPaid.addEventListener("click", (event) => {
 // Event Listener -- random button
 btnRandom.addEventListener("click", (event) => {
     typeSelect = "random";
+    slotChange();
     dateGenerator();
     createOverlay();
     overlayDiv.addEventListener("click", (event) => {
@@ -106,6 +130,7 @@ btnRandom.addEventListener("click", (event) => {
 // Event Listener -- free button
 btnFree.addEventListener("click", (event) => {
     typeSelect = "free";
+    slotChange();
     dateGenerator();
     createOverlay();
     overlayDiv.addEventListener("click", (event) => {
