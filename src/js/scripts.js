@@ -50,6 +50,8 @@ function createOverlay() {
     const overlayTextTitle = document.createElement("h1");
     overlayTextTitle.classList.add("overlay-text-title");
     overlayTextTitle.textContent = "Winner!";
+    const textDiv = document.createElement("div");
+    textDiv.classList.add("text-div");
     const overlayTextContent = document.createElement("p");
     overlayTextContent.classList.add("overlay-text-content");
     overlayTextContent.textContent = dateIdea;
@@ -57,13 +59,14 @@ function createOverlay() {
     // Add created elements to page
     overlayDiv.appendChild(overlayImg);
     overlayDiv.appendChild(overlayTextTitle);
-    overlayDiv.appendChild(overlayTextContent);
+    textDiv.appendChild(overlayTextContent);
+    overlayDiv.appendChild(textDiv);
     mainContainer.appendChild(overlayDiv);
 }
 
 // Function -- remove overlay
 function removeOverlay() {
-    overlayDiv.classList.add("hidden");
+    mainContainer.removeChild(overlayDiv);
 }
 
 // Function -- random date generator
