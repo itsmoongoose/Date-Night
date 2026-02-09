@@ -1,29 +1,21 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" contents="width=device-width, initial-scale=1.0">
         <title>Our Next Date Night</title>
-        <link rel="shortcut icon" href="img/heart-nugget.png">
+        <link rel="shortcut icon" href="img/nugget-heart.png">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <main>
-            <div class="button-container">
-                <img id="slot-machine-background" src="img/slot-machine-bkg-resize.png" alt="If you can read this, the page did not load properly. Please try again.">
-                <img id="assorted-slots" class="slots-images" src="img/assorted-slots.png">
-                <img id="paid-slots-win" class="slots-images" src="img/paid-slots-win.png">
-                <img id="free-slots-win" class="slots-images" src="img/free-slots-win.png">
-                <img id="random-slots-win" class="slots-images" src="img/random-slots-win.png">
-                <button class="buttons" id="paid-btn">
-                    <h1>$$$</h1>
-                </button>
-                <button class="buttons" id="random-btn">
-                    <h1>???</h1>
-                </button>
-                <button class="buttons" id="free-btn">
-                    <h1>FREE</h1>
-                </button>
+        <main id="main-container">
+            <div id="slots-container">
+                <img class="slots-resting-img" src="img/slots-resting.png" alt="Image did not load correctly. Please refresh the page.">
+            </div>
+            <div id="buttons-container">
+                <button id="btn-paid" class="regular-btns"></button>
+                <button id="btn-random" class="regular-btns"></button>
+                <button id="btn-free" class="regular-btns"></button>
             </div>
         </main>
         <script src="js/scripts.js"></script>

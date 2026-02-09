@@ -8,7 +8,7 @@ __*Scope and Functionality*__ - This program was made to randomly generate an id
 
 To reroll the suggestion, simply press another button.
 
-__*Motivation*__ - Allows me to demonstrate and test my knowledge of HTML, CSS, and JavaScript by applying the concepts learned through my program at UofA.
+__*Motivation*__ - Allows me to demonstrate and test my knowledge of HTML, CSS, and JavaScript by applying the concepts learned through my program at the University of Alberta.
 
 ### __Technology Stack__
 - git 2.47.1.windows.1

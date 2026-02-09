@@ -1,76 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #3f3f3d;
+    --background-btns: #a60c26;
+}
+
 body {
-    background-color: rgb(61, 61, 61);
+    background-image: url("../img/slot-machine-background.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: var(--background);
 }
 
-#slot-machine-background {
-    display: block;
-    margin: auto;
-    width: 100%;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#slots-container {
+    width: 45%;
     height: auto;
+    margin-top: 425px;
+    margin-left: 280px;
 }
 
-.button-container {
+.slots-resting-img {
+    width: 99.5%;
+    height: auto;
+    margin-top: 1px;
+}
+
+.slots-paid-img {
+    width: 99.5%;
+    height: auto;
+    margin-top: 4px;
+}
+
+.slots-random-img {
+    width: 99.5%;
+    height: auto;
+    margin-top: 3px;
+}
+
+.slots-free-img {
+    width: 99.5%;
+    height: auto;
+    margin-top: 6px;
+}
+
+#buttons-container {
+    width: 80%;
+    height: 110px;
+    margin-top: 41px;
+    margin-left: 105px;
+    display: flex;
+    flex-direction: row;
+}
+
+.regular-btns {
+    width: 28%;
+    height: 100%;
+    color: var(--background-btns);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    outline: 2px solid transparent;
+}
+
+#btn-paid {
+    background-image: url("../img/btn-paid.png");
+    margin-left: 1px;
+    margin-right: 75px;
+}
+
+#btn-paid:hover {
+    background-image: url("../img/btn-hover-paid.png");
+    background-color: transparent;
+}
+
+#btn-random {
+    background-image: url("../img/btn-random.png");
+    width: 26%;
+    margin-right: 70px;
+}
+
+#btn-random:hover {
+    background-image: url("../img/btn-hover-random.png");
+    background-color: transparent;
+}
+
+#btn-free {
+    background-image: url("../img/btn-free.png");
+    width: 27%;
+    margin-top: 4px;
+}
+
+#btn-free:hover {
+    background-image: url("../img/btn-hover-free.png");
+    background-color: transparent;
+}
+
+.overlay-div {
     position: relative;
     width: 100%;
-}
-
-.buttons {
-    position: absolute;
-    color: white;
-    width: 22%;
-    height: 10%;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 3px;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 10px;
-}
-
-#paid-btn {
-    background-color: rgb(78, 119, 78);
-    top: 70%;
-    left: 11.75%;
-    transform: rotate(1deg);
-}
-
-#random-btn {
-    background-color: rgb(77, 77, 77);
-    top: 70.5%;
-    left: 39.25%;
-    transform: rotate(1deg);
-}
-
-#free-btn {
-    background-color: rgb(78, 119, 78);
-    top: 70.75%;
-    left: 67.5%;
-    transform: rotate(1deg);
-}
-
-.buttons:hover {
-    color: rgb(24, 24, 24);
-    transition-duration: 0.1s;
+    height: 100vh;
+    top: -900px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
     cursor: pointer;
 }
 
-#paid-btn:active {
-    background-color: rgb(39, 59, 39);
+.hidden {
+    display: none;
 }
 
-#random-btn:active {
-    background-color: rgb(37, 37, 37);
+.overlay-img {
+    width: 80%;
+    height: auto;
+    margin-top: 30%;
+    margin-left: 11%;
 }
 
-#free-btn:active {
-    background-color: rgb(39, 59, 39);
-}
-
-.slots-images {
+.overlay-text-title {
     position: absolute;
-    width: 50%;
-    top: 40.09%;
-    left: 25.5%;
+    top: 360px;
+    left: 420px;
+    font-size: 50px;
+}
+
+.text-div {
+    position: absolute;
+    top: 460px;
+    left: 318px;
+}
+
+.overlay-text-content {
+    text-align: center;
+    width: 350px;
+    height: 150px;
+    font-size: 39px;
 }
